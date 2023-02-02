@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 获得Date总的毫秒数(时间戳) （距离1970年1月1号的总毫秒数）
+        // 1.通过valueOf() getTime()
+        var date = new Date(); 
+        nowTime = date.valueOf();
+        console.log(nowTime);
+        console.log(date.getTime());
+
+        // 2.简便写法
+        var date1 = +new Date();        // +new Date() 返回的是总的毫秒数
+        console.log(date1);
+
+        // 3.H5 新增的获得总的毫秒数
+        console.log(Date.now());
+
+        //毫秒数变成天/时/分/秒
+        day = parseInt(nowTime/60/60/24);
+        hours = parseInt(nowTime/60/60%24);
+        mins = parseInt(nowTime/60%60);
+        s = parseInt(nowTime%60);
+
+        console.log('天' + day + '小时' + hours + '分钟' + mins + '秒' + s);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Date:日期时间对象,是一个构造函数，必须使用new来创建对象
+        var date = new Date();
+        console.log(date);
+        
+        //相关API
+        console.log(date.getFullYear());//返回年份
+        console.log(date.getMonth());//返回月份 返回的是当前月的前一个月（由于月份是从0开始到11）
+        console.log(date.getDate());//返回天
+        console.log(date.getDay());//返回星期   周一至周六正常返回对应数字，但是周末返回的是0
+        console.log(date.getHours);//返回小时
+        console.log(date.getMinutes);//返回分钟
+        console.log(date.getSeconds);//返回秒
+
+        //Date对象的有参构造器
+        var date1 = new Date(2019,10,1);    //返回2019年11月
+        console.log(date1);
+        var date2 = new Date('2019-10-1 8:8:8');
+        console.log(date2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

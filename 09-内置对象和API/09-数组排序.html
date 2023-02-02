@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // reverse():颠倒数组中元素的顺序，该方法会改变原来数组，返回新数组
+        var arr = ['pink','red','black'];
+        arr.reverse();
+        console.log(arr);
+        // sort():对数组中的元素进行排序，该方法会改变原来数组，返回新数组
+        var arr1 = [1,4,2,6,3];
+        arr1.sort(function(a,b){            //默认根据字符串进行排序
+            return a-b;             //升序的顺序排列
+            //return b-a;             //降序的顺序排列
+        });                      
+        console.log(arr1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

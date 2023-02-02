@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 利用构造函数创建对象：使用构造函数将对象中一些相同的属性和方法抽象出来封装到函数里面
+        function People(uname,age,sex) {
+            this.uname = uname;
+            this.age = age;
+            this.sex = sex;
+        }
+
+        var student = new People('张三',18,'男');
+
+        console.log(student.uname);
+        console.log(student['sex']);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

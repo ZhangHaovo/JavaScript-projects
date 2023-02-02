@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //concat(str1,str2,str3...):用于链接俩个或者多个字符串。等效于+，+的效率更高
+        var str = 'a';
+        console.log(str.concat('pig'));
+        //substr(start,length):从start开始截取，length取的个数
+        var str1 = 'I am a man';
+        console.log(str1.substr(0,4));
+        //slice(start,end):从start开始，截取到end位置，end取不到
+        console.log(str1.slice(0,3));
+        //substring(start,end):从start开始，截取到end位置，end取不到，但是不接受负值
+
+        //replace('被替换的字符'，'替换成的字符')：替换字符 
+        console.log(str1.replace('man','boy'));
+
+        //split('分隔符')：字符转换成数组
+        var str2 = 'a,b,c,d';
+        console.log(str2.split(','));
+
+        //toUpperCase():转换大写
+        //toLowerCase():转换小写
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

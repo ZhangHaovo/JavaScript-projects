@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.push(参数1...)：末尾添加一个或者多个元素，注意修改原素组，并返回新的数组长度
+        var arr = [1,2,3];
+        arr.push(4);
+        console.log(arr);
+        console.log(arr.push('你好'));
+
+        // 2.pop()：删除数组最后一个元素，把数组长度减1，并返回删除的元素的值
+        arr.pop();
+        console.log(arr);
+        console.log(arr.pop());
+
+        // 3.unshift(参数1...):向数组的开头添加一个或者多个元素，注意修改原数组，并返回新的数组长度
+        arr.unshift('red');
+        console.log(arr.unshift('purple'));
+        
+        // 4.shift():删除数组的第一个元素，数组长度减一，并返回第一个元素的值
+        arr.shift();
+        console.log(arr.shift());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

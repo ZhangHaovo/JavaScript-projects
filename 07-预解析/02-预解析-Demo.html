@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        f1();
+        console.log(c);
+        console.log(b);
+        console.log(a);
+
+        function f1() {
+            var a = b = c = 9;      //只申明了变量a,而bc未申明则看成全局变量
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        */
+
+        //相当于以下代码
+        function f1() {
+            var a;
+            a = b = c = 9;
+            console.log(a);     //9
+            console.log(b);     //9
+            console.log(c);     //9
+        }
+        f1();
+        console.log(c);         //9
+        console.log(b);         //9
+        console.log(a);         //报错
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

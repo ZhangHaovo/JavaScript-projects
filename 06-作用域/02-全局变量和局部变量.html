@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //全局变量和局部变量
+        //1.全局变量（注意：在函数中没有定义直接赋值也属于全局变量）
+        var num = 10;
+        console.log(num);
+
+        function fn() {
+            console.log(num);   //全局变量的影响，值为10
+        }
+        fn();
+
+        //2.局部变量
+        function fun() {
+            var num1 = 20;
+            num2 = 20;
+        }
+        fun();
+        // console.log(num1);      //由于num1是局部变量，在函数外调用则会报错
+        console.log(num2);      //num2在函数中没有定义直接赋值也属于全局变量
+        
+        //从执行效率的角度来看待全局变量和局部变量
+        //1.全局变量只有浏览器关闭的时候才会销毁，比较占用内存资源
+        //2.局部变量当我们程序执行完毕时候才会销毁，比较节约内存资源
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

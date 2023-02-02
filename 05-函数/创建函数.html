@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //申明函数的俩种方式
+        //1.利用函数关键词自定义函数
+        function getSum(num1,num2){     //关键词:function
+            return num1+num2;
+        }
+        console.log(getSum(1,2));
+
+        //2.函数表达式(匿名函数)
+        // var 变量名 = function() {}
+        var fun = function() {      //fun是变量
+            console.log('我是函数表达式');
+        }
+        fun();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
